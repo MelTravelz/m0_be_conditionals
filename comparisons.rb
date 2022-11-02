@@ -35,15 +35,19 @@ puts "Is number_teachers not equal to number_students", number_teachers != numbe
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
+puts "Is number_students greater than or equal to 20?", number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
+puts "Is number_students greater than or equal to 21?", number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
+puts "Is number_students less than or equal to 20?", number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
+puts "Is number_students less than or equal to 21?", number_students <= 21
 # this should print: true
 
 
@@ -58,20 +62,33 @@ puts "Is number_teachers not equal to number_students", number_teachers != numbe
 
 puts 4 < 9
 #YOU DO: Explain.
+# This line of code is a conditional statement that is trying to determine if one integer is less than another. 
+#The comparison will evaluate to TRUE which is a Boolean data type.
 
 books = 3
 puts 4 < books
 # YOU DO: Explain.
+# One variable (books) was declared as an integer (3). 
+# This line of code will determine if an integer (4) is less than the books variable.
+# The comparison will evaluate to FALSE.
 
 friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
+# Two variables were declared as two different integers.
+# The line of code will determine if one variable is greater than another variable. 
+# Another way to explain it would be: This code will determine if the number of friends is greater than the number of siblings.
+# The compairson will evaluate to FALSE.
 
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
+# Two variables were declared as two different integers.
+# The line of code will determine if one variable is not equal to the other variable.
+# OR: The code will determine if the number of attendees is not equal to the number of meals.
+# The compairson will evaluate to TRUE.
 
 
 #-------------------
@@ -94,15 +111,19 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
+puts "Does the dog love to play AND also a puppy?"
+puts loves_to_play && age <= 1
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: The final line of code valuated to the Boolean data type: TRUE.
+# This is because when we use the logical operator <&&> BOTH values must be true to provide this answer.
+# The two values (<loves_to_play> AND <age <= 1>) were both true, so our code evaluated to TRUE.
