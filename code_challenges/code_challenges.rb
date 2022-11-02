@@ -29,12 +29,14 @@ end
 # - If the user is not over 25 and has a bad driving record, they need to have someone else sign for the rental
 
 good_driving_record = true
-age = 24
+age = 45
 
-if good_driving_record = true && age >= 25
+if good_driving_record == true && age >= 25
  puts "Nice! You get a discount Speed Racer!"
-elsif good_driving_record = true || age >= 25
+elsif good_driving_record == true || age >= 25
  puts "Great, Let's find you some wheels!"
-else
+elsif good_driving_record == false || age < 25 
  puts "Bummer. We're unable to rent a car to you."
 end 
+
+# Loom Video Link: https://www.loom.com/share/1ac0bfc106864445aaf31fa437d1f71a
